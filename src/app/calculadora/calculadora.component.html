@@ -1,0 +1,55 @@
+<!-- 
+<p>One Way Binding</p>
+<p>Primer numero</p>
+<input type="number" (keyup)="getNumber1($event)">
+
+
+<p>segundo numero</p>
+<input type="number" (keyup)="getNumber2($event)">
+
+<button (click)="sumar()">Sumar</button>
+
+
+<p>El resultado es : {{toal}}</p>
+-->
+
+<p>Two Way Binding</p>
+<p>Primer numero</p>
+
+
+
+<input type="number" [(ngModel)]="numero1">
+<!-- {{numero1}} -->
+
+<p>segundo numero</p>
+<input type="number" [(ngModel)]="numero2">
+
+
+<section>
+    <tr>
+        
+        <button (click)="sumar()">+</button>
+       
+    </tr>
+</section>
+
+
+<section>
+<tr>
+   
+   
+</tr>
+</section>
+
+<section>
+    <tr>
+        <button (click)="resta()">-</button>
+        <button (click)="multiplicar()">X</button>
+        <button (click)="dividir()">/</button>
+        <button (click)="limpiar()">Clear</button>
+    </tr>
+   
+</section>
+
+<p>La accion es: {{accion}}</p>
+<p>El resultado es : {{toal}}</p>

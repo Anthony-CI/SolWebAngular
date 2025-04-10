@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <!-- 
 <p>One Way Binding</p>
 <p>Primer numero</p>
@@ -11,45 +12,75 @@
 
 
 <p>El resultado es : {{toal}}</p>
--->
-
-<p>Two Way Binding</p>
-<p>Primer numero</p>
-
-
-
-<input type="number" [(ngModel)]="numero1">
-<!-- {{numero1}} -->
-
-<p>segundo numero</p>
-<input type="number" [(ngModel)]="numero2">
-
+-->|
+<p>Two Way Binding </p>
 
 <section>
-    <tr>
-        
-        <button (click)="sumar()">+</button>
-       
-    </tr>
+    <table>
+       <tbody>
+        <tr>
+            <td>
+                <p>Primer numero</p>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <button (click)="disminuirN1()">-</button>
+                <input type="number" [(ngModel)]="numero1">
+                <!-- {{numero1}} -->
+                <button (click)="aumentarN1()">+</button>
+                </td> 
+        </tr>
+        <tr>
+            <td>
+                <p>Segundo numero</p>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <button (click)="disminuirN2()">-</button>
+                <input type="number" [(ngModel)]="numero2">
+                <!-- {{numero2}} -->
+                <button (click)="aumentarN2()">+</button>
+                </td> 
+        </tr>
+        <tr>
+            <td>
+                <p>Operaciones</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button (click)="sumar()">+</button>
+            </td>
+            <td>
+                <button (click)="resta()">-</button>
+            </td>
+            <td>
+                <button (click)="multiplicar()">X</button>
+            </td>
+            <td>
+                <button (click)="dividir()">/</button>
+            </td>
+            
+        </tr>
+        <tr>
+            <td>
+                <button (click)="limpiar()">Clear</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>La accion es: {{accion}}</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>El resultado es : {{toal}}</p>
+            </td>
+        </tr>
+       </tbody>
+    </table>
 </section>
-
-
-<section>
-<tr>
-   
-   
-</tr>
-</section>
-
-<section>
-    <tr>
-        <button (click)="resta()">-</button>
-        <button (click)="multiplicar()">X</button>
-        <button (click)="dividir()">/</button>
-        <button (click)="limpiar()">Clear</button>
-    </tr>
-   
-</section>
-
-<p>La accion es: {{accion}}</p>
-<p>El resultado es : {{toal}}</p>

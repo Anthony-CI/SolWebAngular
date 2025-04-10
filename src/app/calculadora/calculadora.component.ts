@@ -23,6 +23,24 @@ export class CalculadoraComponent {
     //console.log(e.target.value)
   }
 */
+  aumentarN1(){
+    this.numero1 ++;
+  }
+
+  disminuirN1(){
+    this.numero1 --;
+  }
+
+
+  aumentarN2(){
+    this.numero2 ++;
+  }
+
+  disminuirN2(){
+    this.numero2 --;
+  }
+
+
   sumar() {
     this.toal = this.numero1 + this.numero2;
     this.accion= "Suma";
